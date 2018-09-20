@@ -1,0 +1,172 @@
+/*Utility/Helpers*/
+a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.t-sec {
+	margin-top: 30px;	
+}
+
+.space:before {
+	position: absolute;
+	top: 0; left: 0;
+	content: '';
+	display: block;
+	height: 0;
+	width: 100%;
+	background: rgba(255,0,0,0.25);
+}
+
+.space:after {
+	position: absolute;
+	top: 65px; left: 0;
+	content: '';
+	display: block;
+	height: 0;
+	width: 100%;
+	background: rgba(0,0,255,0.25);
+}
+
+/*Basic nav*/
+.navigation {
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation li {
+	display: inline;
+	padding: 0 10px;
+}
+
+/*Nav with separator bars*/
+.navigation-bar {
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation-bar li {
+	display: inline;
+	padding: 0 13px 0 10px;
+	border-right: 1px solid #ccc;
+}
+
+.navigation-bar li:last-child {
+	border: none;
+}
+
+/*Nav with buttons*/
+.navigation-btn {
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation-btn li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.navigation-btn a {
+	display: block;
+	width: 50px;
+	height: 30px;
+	background: #ccc;
+	line-height: 30px;
+	font-size: 16px;
+	text-align: center;
+}
+
+/*Search with submit button*/
+.search {
+	position: relative;
+	height: 30px;
+	border: 1px solid #ccc;
+}
+
+.search input {
+	position: absolute;
+	top: 0; left: 0;
+	padding-right: 30px;
+	padding-left: 10px;
+	width: 100%;
+	height: 28px;
+	border: none;
+}
+
+.search button {
+	position: absolute;
+	top: -1px; right: -1px;
+	height: 30px;
+	border: 1px solid #ccc;
+}
+
+/*Search with submit button with rounded corners*/
+.search-round {
+	position: relative;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+}
+
+.search-round input {
+	position: absolute;
+	top: 0; left: 0;
+	padding-right: 30px;
+	padding-left: 10px;
+	width: 100%;
+	height: 28px;
+	border: none;
+	border-radius: 30px;
+	outline: none;
+}
+
+.search-round button {
+	position: absolute;
+	top: -1px; right: -1px;
+	padding: 0 10px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 0 50% 50% 0;
+}
+
+/*Centering elements on mid-line*/
+.center-nav {
+	position: relative;
+}
+
+.center-nav .navigation-btn {
+	position: absolute;
+	top: 35px; left: 250px;
+	margin-top: 0;
+}
+
+.center-nav:before, .center-nav:after {
+	height: 35px;
+}
+
+.center-textimg {
+	position: relative;
+}
+
+.center-textimg h1{
+	position: absolute;
+	top: 130px; left: 0; right: 0;
+	height: 40px;
+	margin: 0;
+	background: rgba(0,0,0,0.25);
+}
+.center-textimg:before, .center-textimg:after {
+	height: 130px;
+}
+
+.center-textimg:after {
+	top: 170px;
+}
